@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3984203C1ED4013F0021E0FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984203B1ED4013F0021E0FD /* main.m */; };
+		3984203F1ED4013F0021E0FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984203E1ED4013F0021E0FD /* AppDelegate.m */; };
+		398420421ED4013F0021E0FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398420411ED4013F0021E0FD /* ViewController.m */; };
+		398420451ED4013F0021E0FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 398420431ED4013F0021E0FD /* Main.storyboard */; };
+		398420471ED4013F0021E0FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 398420461ED4013F0021E0FD /* Assets.xcassets */; };
+		3984204A1ED4013F0021E0FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 398420481ED4013F0021E0FD /* LaunchScreen.storyboard */; };
+		398420551ED4013F0021E0FD /* CZFToolDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 398420541ED4013F0021E0FD /* CZFToolDemoTests.m */; };
+		398420601ED4013F0021E0FD /* CZFToolDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984205F1ED4013F0021E0FD /* CZFToolDemoUITests.m */; };
+		398420701ED4022E0021E0FD /* CZFTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984206F1ED4022E0021E0FD /* CZFTool.m */; };
+		398420761ED407BD0021E0FD /* AddImageWaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398420751ED407BD0021E0FD /* AddImageWaterViewController.m */; };
+		3984207A1ED40AB70021E0FD /* BeautifulImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398420791ED40AB70021E0FD /* BeautifulImageViewController.m */; };
+		398420801ED410000021E0FD /* TimeStampDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984207F1ED410000021E0FD /* TimeStampDateViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		398420511ED4013F0021E0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3984202F1ED4013F0021E0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 398420361ED4013F0021E0FD;
+			remoteInfo = CZFToolDemo;
+		};
+		3984205C1ED4013F0021E0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3984202F1ED4013F0021E0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 398420361ED4013F0021E0FD;
+			remoteInfo = CZFToolDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		398420371ED4013F0021E0FD /* CZFToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZFToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3984203B1ED4013F0021E0FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3984203D1ED4013F0021E0FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3984203E1ED4013F0021E0FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		398420401ED4013F0021E0FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		398420411ED4013F0021E0FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		398420441ED4013F0021E0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		398420461ED4013F0021E0FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		398420491ED4013F0021E0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3984204B1ED4013F0021E0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		398420501ED4013F0021E0FD /* CZFToolDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZFToolDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		398420541ED4013F0021E0FD /* CZFToolDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZFToolDemoTests.m; sourceTree = "<group>"; };
+		398420561ED4013F0021E0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3984205B1ED4013F0021E0FD /* CZFToolDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZFToolDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3984205F1ED4013F0021E0FD /* CZFToolDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZFToolDemoUITests.m; sourceTree = "<group>"; };
+		398420611ED4013F0021E0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3984206E1ED4022E0021E0FD /* CZFTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFTool.h; sourceTree = "<group>"; };
+		3984206F1ED4022E0021E0FD /* CZFTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZFTool.m; sourceTree = "<group>"; };
+		398420741ED407BD0021E0FD /* AddImageWaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddImageWaterViewController.h; sourceTree = "<group>"; };
+		398420751ED407BD0021E0FD /* AddImageWaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddImageWaterViewController.m; sourceTree = "<group>"; };
+		398420781ED40AB70021E0FD /* BeautifulImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautifulImageViewController.h; sourceTree = "<group>"; };
+		398420791ED40AB70021E0FD /* BeautifulImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautifulImageViewController.m; sourceTree = "<group>"; };
+		3984207E1ED410000021E0FD /* TimeStampDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStampDateViewController.h; sourceTree = "<group>"; };
+		3984207F1ED410000021E0FD /* TimeStampDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStampDateViewController.m; sourceTree = "<group>"; };
+		398420811ED412CE0021E0FD /* CZFToolDemo-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CZFToolDemo-PrefixHeader.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		398420341ED4013F0021E0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3984204D1ED4013F0021E0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		398420581ED4013F0021E0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3984202E1ED4013F0021E0FD = {
+			isa = PBXGroup;
+			children = (
+				398420391ED4013F0021E0FD /* CZFToolDemo */,
+				398420531ED4013F0021E0FD /* CZFToolDemoTests */,
+				3984205E1ED4013F0021E0FD /* CZFToolDemoUITests */,
+				398420381ED4013F0021E0FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		398420381ED4013F0021E0FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				398420371ED4013F0021E0FD /* CZFToolDemo.app */,
+				398420501ED4013F0021E0FD /* CZFToolDemoTests.xctest */,
+				3984205B1ED4013F0021E0FD /* CZFToolDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		398420391ED4013F0021E0FD /* CZFToolDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3984206D1ED402240021E0FD /* CZFTool */,
+				3984203D1ED4013F0021E0FD /* AppDelegate.h */,
+				3984203E1ED4013F0021E0FD /* AppDelegate.m */,
+				398420401ED4013F0021E0FD /* ViewController.h */,
+				398420411ED4013F0021E0FD /* ViewController.m */,
+				398420431ED4013F0021E0FD /* Main.storyboard */,
+				398420711ED406FC0021E0FD /* DealListVC */,
+				398420461ED4013F0021E0FD /* Assets.xcassets */,
+				398420481ED4013F0021E0FD /* LaunchScreen.storyboard */,
+				3984204B1ED4013F0021E0FD /* Info.plist */,
+				398420811ED412CE0021E0FD /* CZFToolDemo-PrefixHeader.pch */,
+				3984203A1ED4013F0021E0FD /* Supporting Files */,
+			);
+			path = CZFToolDemo;
+			sourceTree = "<group>";
+		};
+		3984203A1ED4013F0021E0FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3984203B1ED4013F0021E0FD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		398420531ED4013F0021E0FD /* CZFToolDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				398420541ED4013F0021E0FD /* CZFToolDemoTests.m */,
+				398420561ED4013F0021E0FD /* Info.plist */,
+			);
+			path = CZFToolDemoTests;
+			sourceTree = "<group>";
+		};
+		3984205E1ED4013F0021E0FD /* CZFToolDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3984205F1ED4013F0021E0FD /* CZFToolDemoUITests.m */,
+				398420611ED4013F0021E0FD /* Info.plist */,
+			);
+			path = CZFToolDemoUITests;
+			sourceTree = "<group>";
+		};
+		3984206D1ED402240021E0FD /* CZFTool */ = {
+			isa = PBXGroup;
+			children = (
+				3984206E1ED4022E0021E0FD /* CZFTool.h */,
+				3984206F1ED4022E0021E0FD /* CZFTool.m */,
+			);
+			name = CZFTool;
+			sourceTree = "<group>";
+		};
+		398420711ED406FC0021E0FD /* DealListVC */ = {
+			isa = PBXGroup;
+			children = (
+				398420721ED407420021E0FD /* 图片相关处理 */,
+				3984207B1ED40F830021E0FD /* 时间相关处理 */,
+			);
+			name = DealListVC;
+			sourceTree = "<group>";
+		};
+		398420721ED407420021E0FD /* 图片相关处理 */ = {
+			isa = PBXGroup;
+			children = (
+				398420731ED4077C0021E0FD /* AddImageWaterViewController */,
+				398420771ED40A990021E0FD /* BeautifulImageViewController */,
+			);
+			name = "图片相关处理";
+			sourceTree = "<group>";
+		};
+		398420731ED4077C0021E0FD /* AddImageWaterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				398420741ED407BD0021E0FD /* AddImageWaterViewController.h */,
+				398420751ED407BD0021E0FD /* AddImageWaterViewController.m */,
+			);
+			name = AddImageWaterViewController;
+			sourceTree = "<group>";
+		};
+		398420771ED40A990021E0FD /* BeautifulImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				398420781ED40AB70021E0FD /* BeautifulImageViewController.h */,
+				398420791ED40AB70021E0FD /* BeautifulImageViewController.m */,
+			);
+			name = BeautifulImageViewController;
+			sourceTree = "<group>";
+		};
+		3984207B1ED40F830021E0FD /* 时间相关处理 */ = {
+			isa = PBXGroup;
+			children = (
+				3984207D1ED40F960021E0FD /* TimeStampDateViewController */,
+			);
+			name = "时间相关处理";
+			sourceTree = "<group>";
+		};
+		3984207D1ED40F960021E0FD /* TimeStampDateViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3984207E1ED410000021E0FD /* TimeStampDateViewController.h */,
+				3984207F1ED410000021E0FD /* TimeStampDateViewController.m */,
+			);
+			name = TimeStampDateViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		398420361ED4013F0021E0FD /* CZFToolDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 398420641ED4013F0021E0FD /* Build configuration list for PBXNativeTarget "CZFToolDemo" */;
+			buildPhases = (
+				398420331ED4013F0021E0FD /* Sources */,
+				398420341ED4013F0021E0FD /* Frameworks */,
+				398420351ED4013F0021E0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CZFToolDemo;
+			productName = CZFToolDemo;
+			productReference = 398420371ED4013F0021E0FD /* CZFToolDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3984204F1ED4013F0021E0FD /* CZFToolDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 398420671ED4013F0021E0FD /* Build configuration list for PBXNativeTarget "CZFToolDemoTests" */;
+			buildPhases = (
+				3984204C1ED4013F0021E0FD /* Sources */,
+				3984204D1ED4013F0021E0FD /* Frameworks */,
+				3984204E1ED4013F0021E0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				398420521ED4013F0021E0FD /* PBXTargetDependency */,
+			);
+			name = CZFToolDemoTests;
+			productName = CZFToolDemoTests;
+			productReference = 398420501ED4013F0021E0FD /* CZFToolDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3984205A1ED4013F0021E0FD /* CZFToolDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3984206A1ED4013F0021E0FD /* Build configuration list for PBXNativeTarget "CZFToolDemoUITests" */;
+			buildPhases = (
+				398420571ED4013F0021E0FD /* Sources */,
+				398420581ED4013F0021E0FD /* Frameworks */,
+				398420591ED4013F0021E0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3984205D1ED4013F0021E0FD /* PBXTargetDependency */,
+			);
+			name = CZFToolDemoUITests;
+			productName = CZFToolDemoUITests;
+			productReference = 3984205B1ED4013F0021E0FD /* CZFToolDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3984202F1ED4013F0021E0FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "陈帆";
+				TargetAttributes = {
+					398420361ED4013F0021E0FD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EDA8EGULN6;
+						ProvisioningStyle = Automatic;
+					};
+					3984204F1ED4013F0021E0FD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EDA8EGULN6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 398420361ED4013F0021E0FD;
+					};
+					3984205A1ED4013F0021E0FD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EDA8EGULN6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 398420361ED4013F0021E0FD;
+					};
+				};
+			};
+			buildConfigurationList = 398420321ED4013F0021E0FD /* Build configuration list for PBXProject "CZFToolDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3984202E1ED4013F0021E0FD;
+			productRefGroup = 398420381ED4013F0021E0FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				398420361ED4013F0021E0FD /* CZFToolDemo */,
+				3984204F1ED4013F0021E0FD /* CZFToolDemoTests */,
+				3984205A1ED4013F0021E0FD /* CZFToolDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		398420351ED4013F0021E0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3984204A1ED4013F0021E0FD /* LaunchScreen.storyboard in Resources */,
+				398420471ED4013F0021E0FD /* Assets.xcassets in Resources */,
+				398420451ED4013F0021E0FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3984204E1ED4013F0021E0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		398420591ED4013F0021E0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		398420331ED4013F0021E0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398420421ED4013F0021E0FD /* ViewController.m in Sources */,
+				398420701ED4022E0021E0FD /* CZFTool.m in Sources */,
+				398420761ED407BD0021E0FD /* AddImageWaterViewController.m in Sources */,
+				398420801ED410000021E0FD /* TimeStampDateViewController.m in Sources */,
+				3984203F1ED4013F0021E0FD /* AppDelegate.m in Sources */,
+				3984207A1ED40AB70021E0FD /* BeautifulImageViewController.m in Sources */,
+				3984203C1ED4013F0021E0FD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3984204C1ED4013F0021E0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398420551ED4013F0021E0FD /* CZFToolDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		398420571ED4013F0021E0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398420601ED4013F0021E0FD /* CZFToolDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		398420521ED4013F0021E0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 398420361ED4013F0021E0FD /* CZFToolDemo */;
+			targetProxy = 398420511ED4013F0021E0FD /* PBXContainerItemProxy */;
+		};
+		3984205D1ED4013F0021E0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 398420361ED4013F0021E0FD /* CZFToolDemo */;
+			targetProxy = 3984205C1ED4013F0021E0FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		398420431ED4013F0021E0FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				398420441ED4013F0021E0FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		398420481ED4013F0021E0FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				398420491ED4013F0021E0FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		398420621ED4013F0021E0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		398420631ED4013F0021E0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		398420651ED4013F0021E0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EDA8EGULN6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CZFToolDemo/CZFToolDemo-PrefixHeader.pch";
+				INFOPLIST_FILE = CZFToolDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jointsky.CZFToolDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		398420661ED4013F0021E0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EDA8EGULN6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CZFToolDemo/CZFToolDemo-PrefixHeader.pch";
+				INFOPLIST_FILE = CZFToolDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jointsky.CZFToolDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		398420681ED4013F0021E0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EDA8EGULN6;
+				INFOPLIST_FILE = CZFToolDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jointsky.CZFToolDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CZFToolDemo.app/CZFToolDemo";
+			};
+			name = Debug;
+		};
+		398420691ED4013F0021E0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EDA8EGULN6;
+				INFOPLIST_FILE = CZFToolDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jointsky.CZFToolDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CZFToolDemo.app/CZFToolDemo";
+			};
+			name = Release;
+		};
+		3984206B1ED4013F0021E0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EDA8EGULN6;
+				INFOPLIST_FILE = CZFToolDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jointsky.CZFToolDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CZFToolDemo;
+			};
+			name = Debug;
+		};
+		3984206C1ED4013F0021E0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EDA8EGULN6;
+				INFOPLIST_FILE = CZFToolDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jointsky.CZFToolDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CZFToolDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		398420321ED4013F0021E0FD /* Build configuration list for PBXProject "CZFToolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				398420621ED4013F0021E0FD /* Debug */,
+				398420631ED4013F0021E0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		398420641ED4013F0021E0FD /* Build configuration list for PBXNativeTarget "CZFToolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				398420651ED4013F0021E0FD /* Debug */,
+				398420661ED4013F0021E0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		398420671ED4013F0021E0FD /* Build configuration list for PBXNativeTarget "CZFToolDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				398420681ED4013F0021E0FD /* Debug */,
+				398420691ED4013F0021E0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3984206A1ED4013F0021E0FD /* Build configuration list for PBXNativeTarget "CZFToolDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3984206B1ED4013F0021E0FD /* Debug */,
+				3984206C1ED4013F0021E0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3984202F1ED4013F0021E0FD /* Project object */;
+}
