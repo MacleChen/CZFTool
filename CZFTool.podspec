@@ -1,3 +1,4 @@
+Pod::Spec.new do |s|
 
   s.name         = "CZFTool"
   s.version      = "0.0.1"
@@ -22,3 +23,5 @@
 
 
   s.source_files  = "CZFTool", "CZFTool/*.{h,m}"
+
+end
