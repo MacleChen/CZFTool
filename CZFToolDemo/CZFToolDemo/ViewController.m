@@ -38,6 +38,7 @@
                     
                     @{@"时间相关处理" : @[@{@"TimeStampDateView" : @"时间显示"},]},
                     
+                    @{@"数据加密" : @[@{@"AESCEnDeCryptView" : @"AESC加解密"},]},
                     ];
 }
 

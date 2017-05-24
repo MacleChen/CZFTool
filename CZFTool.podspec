@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "CZFTool"
-  s.version      = "0.0.1"
-  s.summary      = "my first  CZFTool."
+  s.version      = "0.0.2"
+  s.summary      = "图片处理，时间处理，加密等功能"
 
   s.description  = "CZFTool is a function normal use, you will fast your work."
 

@@ -15,10 +15,15 @@
 		3984204A1ED4013F0021E0FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 398420481ED4013F0021E0FD /* LaunchScreen.storyboard */; };
 		398420551ED4013F0021E0FD /* CZFToolDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 398420541ED4013F0021E0FD /* CZFToolDemoTests.m */; };
 		398420601ED4013F0021E0FD /* CZFToolDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984205F1ED4013F0021E0FD /* CZFToolDemoUITests.m */; };
-		398420701ED4022E0021E0FD /* CZFTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984206F1ED4022E0021E0FD /* CZFTool.m */; };
 		398420761ED407BD0021E0FD /* AddImageWaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398420751ED407BD0021E0FD /* AddImageWaterViewController.m */; };
 		3984207A1ED40AB70021E0FD /* BeautifulImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398420791ED40AB70021E0FD /* BeautifulImageViewController.m */; };
 		398420801ED410000021E0FD /* TimeStampDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984207F1ED410000021E0FD /* TimeStampDateViewController.m */; };
+		39B7C6231ED5606000B47F1A /* AESCEnDeCryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B7C6221ED5606000B47F1A /* AESCEnDeCryptViewController.m */; };
+		39B7C62F1ED5699600B47F1A /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B7C6261ED5699600B47F1A /* AESCrypt.m */; };
+		39B7C6301ED5699600B47F1A /* CZFTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B7C6281ED5699600B47F1A /* CZFTool.m */; };
+		39B7C6311ED5699600B47F1A /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B7C62A1ED5699600B47F1A /* NSData+Base64.m */; };
+		39B7C6321ED5699600B47F1A /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B7C62C1ED5699600B47F1A /* NSData+CommonCrypto.m */; };
+		39B7C6331ED5699600B47F1A /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B7C62E1ED5699600B47F1A /* NSString+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +60,6 @@
 		3984205B1ED4013F0021E0FD /* CZFToolDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZFToolDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3984205F1ED4013F0021E0FD /* CZFToolDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZFToolDemoUITests.m; sourceTree = "<group>"; };
 		398420611ED4013F0021E0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3984206E1ED4022E0021E0FD /* CZFTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFTool.h; sourceTree = "<group>"; };
-		3984206F1ED4022E0021E0FD /* CZFTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZFTool.m; sourceTree = "<group>"; };
 		398420741ED407BD0021E0FD /* AddImageWaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddImageWaterViewController.h; sourceTree = "<group>"; };
 		398420751ED407BD0021E0FD /* AddImageWaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddImageWaterViewController.m; sourceTree = "<group>"; };
 		398420781ED40AB70021E0FD /* BeautifulImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautifulImageViewController.h; sourceTree = "<group>"; };
@@ -64,6 +67,18 @@
 		3984207E1ED410000021E0FD /* TimeStampDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStampDateViewController.h; sourceTree = "<group>"; };
 		3984207F1ED410000021E0FD /* TimeStampDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStampDateViewController.m; sourceTree = "<group>"; };
 		398420811ED412CE0021E0FD /* CZFToolDemo-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CZFToolDemo-PrefixHeader.pch"; sourceTree = "<group>"; };
+		39B7C6211ED5606000B47F1A /* AESCEnDeCryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCEnDeCryptViewController.h; sourceTree = "<group>"; };
+		39B7C6221ED5606000B47F1A /* AESCEnDeCryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCEnDeCryptViewController.m; sourceTree = "<group>"; };
+		39B7C6251ED5699600B47F1A /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		39B7C6261ED5699600B47F1A /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		39B7C6271ED5699600B47F1A /* CZFTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFTool.h; sourceTree = "<group>"; };
+		39B7C6281ED5699600B47F1A /* CZFTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZFTool.m; sourceTree = "<group>"; };
+		39B7C6291ED5699600B47F1A /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		39B7C62A1ED5699600B47F1A /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		39B7C62B1ED5699600B47F1A /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		39B7C62C1ED5699600B47F1A /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		39B7C62D1ED5699600B47F1A /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		39B7C62E1ED5699600B47F1A /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +129,7 @@
 		398420391ED4013F0021E0FD /* CZFToolDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3984206D1ED402240021E0FD /* CZFTool */,
+				39B7C6241ED5699600B47F1A /* CZFTool */,
 				3984203D1ED4013F0021E0FD /* AppDelegate.h */,
 				3984203E1ED4013F0021E0FD /* AppDelegate.m */,
 				398420401ED4013F0021E0FD /* ViewController.h */,
@@ -156,20 +171,12 @@
 			path = CZFToolDemoUITests;
 			sourceTree = "<group>";
 		};
-		3984206D1ED402240021E0FD /* CZFTool */ = {
-			isa = PBXGroup;
-			children = (
-				3984206E1ED4022E0021E0FD /* CZFTool.h */,
-				3984206F1ED4022E0021E0FD /* CZFTool.m */,
-			);
-			name = CZFTool;
-			sourceTree = "<group>";
-		};
 		398420711ED406FC0021E0FD /* DealListVC */ = {
 			isa = PBXGroup;
 			children = (
 				398420721ED407420021E0FD /* 图片相关处理 */,
 				3984207B1ED40F830021E0FD /* 时间相关处理 */,
+				39B7C61F1ED55FF400B47F1A /* 数据加密 */,
 			);
 			name = DealListVC;
 			sourceTree = "<group>";
@@ -216,6 +223,40 @@
 				3984207F1ED410000021E0FD /* TimeStampDateViewController.m */,
 			);
 			name = TimeStampDateViewController;
+			sourceTree = "<group>";
+		};
+		39B7C61F1ED55FF400B47F1A /* 数据加密 */ = {
+			isa = PBXGroup;
+			children = (
+				39B7C6201ED5600700B47F1A /* AESCEnDeCryptViewController */,
+			);
+			name = "数据加密";
+			sourceTree = "<group>";
+		};
+		39B7C6201ED5600700B47F1A /* AESCEnDeCryptViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39B7C6211ED5606000B47F1A /* AESCEnDeCryptViewController.h */,
+				39B7C6221ED5606000B47F1A /* AESCEnDeCryptViewController.m */,
+			);
+			name = AESCEnDeCryptViewController;
+			sourceTree = "<group>";
+		};
+		39B7C6241ED5699600B47F1A /* CZFTool */ = {
+			isa = PBXGroup;
+			children = (
+				39B7C6251ED5699600B47F1A /* AESCrypt.h */,
+				39B7C6261ED5699600B47F1A /* AESCrypt.m */,
+				39B7C6271ED5699600B47F1A /* CZFTool.h */,
+				39B7C6281ED5699600B47F1A /* CZFTool.m */,
+				39B7C6291ED5699600B47F1A /* NSData+Base64.h */,
+				39B7C62A1ED5699600B47F1A /* NSData+Base64.m */,
+				39B7C62B1ED5699600B47F1A /* NSData+CommonCrypto.h */,
+				39B7C62C1ED5699600B47F1A /* NSData+CommonCrypto.m */,
+				39B7C62D1ED5699600B47F1A /* NSString+Base64.h */,
+				39B7C62E1ED5699600B47F1A /* NSString+Base64.m */,
+			);
+			path = CZFTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,11 +395,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B7C6331ED5699600B47F1A /* NSString+Base64.m in Sources */,
+				39B7C62F1ED5699600B47F1A /* AESCrypt.m in Sources */,
 				398420421ED4013F0021E0FD /* ViewController.m in Sources */,
-				398420701ED4022E0021E0FD /* CZFTool.m in Sources */,
+				39B7C6321ED5699600B47F1A /* NSData+CommonCrypto.m in Sources */,
 				398420761ED407BD0021E0FD /* AddImageWaterViewController.m in Sources */,
+				39B7C6231ED5606000B47F1A /* AESCEnDeCryptViewController.m in Sources */,
 				398420801ED410000021E0FD /* TimeStampDateViewController.m in Sources */,
+				39B7C6301ED5699600B47F1A /* CZFTool.m in Sources */,
 				3984203F1ED4013F0021E0FD /* AppDelegate.m in Sources */,
+				39B7C6311ED5699600B47F1A /* NSData+Base64.m in Sources */,
 				3984207A1ED40AB70021E0FD /* BeautifulImageViewController.m in Sources */,
 				3984203C1ED4013F0021E0FD /* main.m in Sources */,
 			);
