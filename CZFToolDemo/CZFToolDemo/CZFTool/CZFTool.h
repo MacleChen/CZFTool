@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "AESCrypt.h"
 
 // 获取屏幕的尺寸
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width        // 宽
