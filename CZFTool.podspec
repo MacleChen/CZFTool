@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CZFTool"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "修复CZFtool框架内容"
 
   # This description is used to generate tags and improve search results.
