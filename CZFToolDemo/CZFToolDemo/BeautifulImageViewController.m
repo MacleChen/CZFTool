@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view.
     
 //    0.f  1.05f  2.f
-    self.secondImageView.image = [CZFTool dealHBSImage:self.firstImageView.image andLight:0.f andContrast:1.05f andsaturation:2.f];
+    self.secondImageView.image = [tools dealHBSImage:self.firstImageView.image andLight:0.f andContrast:1.05f andsaturation:2.f];
 }
 
 - (void)didReceiveMemoryWarning {

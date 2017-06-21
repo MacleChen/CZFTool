@@ -6,15 +6,15 @@
 //  Copyright © 2015年 com.jointsky.www. All rights reserved.
 //
 
-#import "CZFTool.h"
+#import "tools.h"
 
 
-@interface CZFTool ()
+@interface tools ()
 
 @end
 
 
-@implementation CZFTool
+@implementation tools
 
 
 /**
@@ -168,22 +168,22 @@
     UIGraphicsBeginImageContext(size);
     // 左图片
     if (leftImage.size.width >= leftImage.size.height) {
-        float imgNewLeftHeight = [CZFTool GetImageWithOrHeightWithImage:leftImage andWidht:size.width/2 andHeight:0.0];
+        float imgNewLeftHeight = [tools GetImageWithOrHeightWithImage:leftImage andWidht:size.width/2 andHeight:0.0];
         
         [leftImage drawInRect:CGRectMake(0, (size.height - imgNewLeftHeight)/2, size.width/2, imgNewLeftHeight)];
     } else {
-        float imgNewLeftWidth = [CZFTool GetImageWithOrHeightWithImage:leftImage andWidht:0.0 andHeight:size.height];
+        float imgNewLeftWidth = [tools GetImageWithOrHeightWithImage:leftImage andWidht:0.0 andHeight:size.height];
         
         [leftImage drawInRect:CGRectMake(0, 0, imgNewLeftWidth, size.height)];
     }
     
     // 右图片
     if (rightImage.size.width >= rightImage.size.height) {
-        float imgNewRightHeight = [CZFTool GetImageWithOrHeightWithImage:rightImage andWidht:size.width/2 andHeight:0.0];
+        float imgNewRightHeight = [tools GetImageWithOrHeightWithImage:rightImage andWidht:size.width/2 andHeight:0.0];
         
         [rightImage drawInRect:CGRectMake(size.width/2, (size.height - imgNewRightHeight)/2, size.width/2, imgNewRightHeight)];
     } else {
-        float imgNewRightWidth = [CZFTool GetImageWithOrHeightWithImage:rightImage andWidht:0.0 andHeight:size.height];
+        float imgNewRightWidth = [tools GetImageWithOrHeightWithImage:rightImage andWidht:0.0 andHeight:size.height];
         
         [rightImage drawInRect:CGRectMake(size.width/2, 0, imgNewRightWidth, size.height)];
     }
@@ -453,7 +453,7 @@
     
     
     UILabel *addressLabel = [[UILabel alloc]initWithFrame:CGRectMake(25, view.bounds.size.height - 90, SCREEN_WIDTH, 20)];
-    addressLabel.text = [CZFTool getThoroughfare];
+    addressLabel.text = [tools getThoroughfare];
     addressLabel.font = [UIFont systemFontOfSize:13];
     
     
@@ -474,7 +474,7 @@
     
     
     UILabel *timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(25, view.bounds.size.height - 75, SCREEN_WIDTH, 20)];
-    timeLabel.text = [CZFTool getLocalTime];
+    timeLabel.text = [tools getLocalTime];
     timeLabel.font = [UIFont systemFontOfSize:13];
 
     
@@ -548,14 +548,14 @@
     int maxSizeWH = maxwidthOrHeight/2;
     CGSize imgeSize;
     if (image.size.width >= image.size.height) {
-        float imgNewHeight = [CZFTool GetImageWithOrHeightWithImage:image andWidht:maxSizeWH andHeight:0.0];
+        float imgNewHeight = [tools GetImageWithOrHeightWithImage:image andWidht:maxSizeWH andHeight:0.0];
         imgeSize = CGSizeMake(maxSizeWH, imgNewHeight);
     } else {
-        float imgNewWidth = [CZFTool GetImageWithOrHeightWithImage:image andWidht:0.0 andHeight:maxSizeWH];
+        float imgNewWidth = [tools GetImageWithOrHeightWithImage:image andWidht:0.0 andHeight:maxSizeWH];
         imgeSize = CGSizeMake(imgNewWidth, maxSizeWH);
     }
     
-    return [CZFTool scalToSize:image size:imgeSize];
+    return [tools scalToSize:image size:imgeSize];
 }
 
 
@@ -744,7 +744,7 @@
     NSInteger interval = [zone secondsFromGMTForDate: date];
     NSDate *localeDate = [date  dateByAddingTimeInterval: -interval];
     
-    return [CZFTool stringFromDate:localeDate andFormatterString:strFormater];
+    return [tools stringFromDate:localeDate andFormatterString:strFormater];
 }
 
 
@@ -757,7 +757,7 @@
  */
 + (NSString*)weekdayStringFromDate:(NSString *)strInputDate {
     
-    NSDate *inputDate = [CZFTool dateFromString:strInputDate andFormatterString:@"yy-MM-dd"];
+    NSDate *inputDate = [tools dateFromString:strInputDate andFormatterString:@"yy-MM-dd"];
     
     NSArray *weekdays = [NSArray arrayWithObjects: [NSNull null], @"周日", @"周一", @"周二", @"周三", @"周四", @"周五", @"周六", nil];
     
@@ -784,8 +784,8 @@
  @return 可读时间字符串
  */
 + (NSString *)stringNormalReadWithDate:(NSDate *)date {
-    NSArray *dateInfoArray = [CZFTool getDateYearMonthDayWithDate:date];
-    NSArray *currentDateInfoArray = [CZFTool getDateYearMonthDayWithDate:[NSDate date]];
+    NSArray *dateInfoArray = [tools getDateYearMonthDayWithDate:date];
+    NSArray *currentDateInfoArray = [tools getDateYearMonthDayWithDate:[NSDate date]];
     
     if ([dateInfoArray[0] integerValue] == [currentDateInfoArray[0] integerValue]) {
         // 年相等
@@ -793,22 +793,22 @@
             // 月相等
             if ([dateInfoArray[2] integerValue] == [currentDateInfoArray[2] integerValue]) {
                 // 日相等
-                return [CZFTool stringFromDate:date andFormatterString:@"今天 HH:mm"];
+                return [tools stringFromDate:date andFormatterString:@"今天 HH:mm"];
             } else {
                 NSInteger gapValue = [currentDateInfoArray[2] integerValue] - [dateInfoArray[2] integerValue] ;
                 if (gapValue == 1) {
-                    return [CZFTool stringFromDate:date andFormatterString:@"昨天 HH:mm"];
+                    return [tools stringFromDate:date andFormatterString:@"昨天 HH:mm"];
                 } else if (gapValue == -1) {
-                    return [CZFTool stringFromDate:date andFormatterString:@"明天 HH:mm"];
+                    return [tools stringFromDate:date andFormatterString:@"明天 HH:mm"];
                 }
-                return [CZFTool stringFromDate:date andFormatterString:@"M月d日 HH:mm"];
+                return [tools stringFromDate:date andFormatterString:@"M月d日 HH:mm"];
             }
         } else {
-            return [CZFTool stringFromDate:date andFormatterString:@"M月d日 HH:mm"];
+            return [tools stringFromDate:date andFormatterString:@"M月d日 HH:mm"];
         }
     }
     
-    return [CZFTool stringFromDate:date andFormatterString:@"yyyy年M月d日 HH:mm"];
+    return [tools stringFromDate:date andFormatterString:@"yyyy年M月d日 HH:mm"];
 }
 
 
@@ -1275,7 +1275,7 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
  */
 + (NSString *)formattingTimeCanEasyRead:(NSDate *)oldDate {
     NSString *timeStr = nil;
-    long betweenMinutes = [CZFTool GetMinuteByOldDateBetweenNowDate:oldDate];
+    long betweenMinutes = [tools GetMinuteByOldDateBetweenNowDate:oldDate];
     if (betweenMinutes < 60) {
         timeStr = [NSString stringWithFormat:@"%li分钟前发布", betweenMinutes];
     } if (betweenMinutes >= 60 && betweenMinutes < 3600) {

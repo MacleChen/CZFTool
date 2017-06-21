@@ -36,19 +36,19 @@
     // timer one
     self.timerOne = [NSTimer scheduledTimerWithTimeInterval:1.0 repeats:YES block:^(NSTimer * _Nonnull timer) {
         // title label
-        self.showTitleLabel.text = [CZFTool stringNormalReadWithDate:[NSDate date]];
+        self.showTitleLabel.text = [tools stringNormalReadWithDate:[NSDate date]];
         
         // second Label
         self.showTwoLabel.text = [NSString stringWithFormat:@"%.0f", [NSDate timeIntervalSinceReferenceDate]];
         
         // third Label
-        self.showThreeLabel.text = [CZFTool stringFromDate:[NSDate date] andFormatterString:DATE_STANDARD_FORMATTER];
+        self.showThreeLabel.text = [tools stringFromDate:[NSDate date] andFormatterString:DATE_STANDARD_FORMATTER];
     }];
     
     // timer two
     self.timerTwo = [NSTimer scheduledTimerWithTimeInterval:0.05 repeats:YES block:^(NSTimer * _Nonnull timer) {
         // first Label
-        NSArray *currentDateInfoArray = [CZFTool getDateYearMonthDayWithDate:[NSDate date]];
+        NSArray *currentDateInfoArray = [tools getDateYearMonthDayWithDate:[NSDate date]];
         self.showOneLabel.text = [NSString stringWithFormat:@"%@年%@月%@日 %@时%@分%@秒 周%@  %.0f", currentDateInfoArray[0], currentDateInfoArray[1], currentDateInfoArray[2], currentDateInfoArray[3], currentDateInfoArray[4], currentDateInfoArray[5],currentDateInfoArray[7], [currentDateInfoArray[6] doubleValue]/1000000];
     }];
     
