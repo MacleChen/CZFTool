@@ -579,4 +579,78 @@
  */
 + (NSString *)checkFilePathExistWithFileName:(NSString *)fileName;
 
+
+
+/**
+ 统计目录文件下文件的总大小
+ 
+ @param folderPath 目录地址
+ @return 总大小
+ */
++ (long long)folderSizeWithPath:(NSString *)folderPath;
+
+
+/**
+ 计算指定文件的大小
+ 
+ @param filePath 文件地址
+ @return 大小
+ */
++ (long long)fileSizeWithPath:(NSString *)filePath;
+
+
+/**
+ 删除指定目录下的所有文件
+ 
+ @param folderPath 目录地址
+ */
++ (void)removeFolderPathAndFileWithPath:(NSString *)folderPath;
+
+
+
+/**
+ url参数字符串转字典
+ 
+ @param urlStr url参数字符串
+ @return 结果字典
+ */
++(NSDictionary *)dictionaryWithUrlString:(NSString *)urlStr;
+
+
+/**
+ json 字符串转字典的方法
+ 
+ @param jsonString json字符串
+ @return 转换后的字典
+ */
++ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
+
+
+/*
+ *x*y
+ *改变字符start 和 end 之间的字符的颜色 和 字体大小
+ */
++ (void)messageAction:(UITextView *)theTextView startString:(NSString *)start endString:(NSString *)end andAllColor:(UIColor *)allColor andMarkColor:(UIColor *)markColor andMarkFondSize:(float)fontSize;
+
+
+/**
+ 判断字符串是否为纯数字
+ 
+ @param checkedNumString 字符串
+ @return 结果Bool类型
+ */
++ (BOOL)isNum:(NSString *)checkedNumString;
+
+
+
+/**
+ *  从图片中按指定的位置大小截取图片的一部分
+ *
+ *  @param image UIImage image 原始的图片
+ *  @param rect  CGRect rect 要截取的区域
+ *
+ *  @return UIImage
+ */
++ (UIImage *)ct_imageFromImage:(UIImage *)image inRect:(CGRect)rect;
+
 @end

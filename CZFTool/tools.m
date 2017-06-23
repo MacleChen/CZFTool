@@ -1461,5 +1461,223 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 }
 
 
+/**
+ 统计目录文件下文件的总大小
+ 
+ @param folderPath 目录地址
+ @return 总大小
+ */
++ (long long)folderSizeWithPath:(NSString *)folderPath {
+    // 获取默认的文件管理器
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    // 判断文件是否存在
+    if (![fileManager fileExistsAtPath:folderPath]) return 0;
+    
+    //文件的枚举器
+    NSEnumerator *fileEnumerator = [[fileManager subpathsAtPath:folderPath] objectEnumerator];
+    NSString *fileName = nil;
+    long long filesAllSize = 0;
+    while ((fileName = [fileEnumerator nextObject]) != nil) {
+        NSString *fileAbsolutePath = [folderPath stringByAppendingPathComponent:fileName];
+        
+        if ([fileAbsolutePath hasSuffix:@"doc"] || [fileAbsolutePath hasSuffix:@"DOC"]  || [fileAbsolutePath hasSuffix:@"docx"] || [fileAbsolutePath hasSuffix:@"DOCX"] || [fileAbsolutePath hasSuffix:@"pdf"] || [fileAbsolutePath hasSuffix:@"PDF"] || [fileAbsolutePath hasSuffix:@"ppt"] || [fileAbsolutePath hasSuffix:@"PPT"] || [fileAbsolutePath hasSuffix:@"xls"] || [fileAbsolutePath hasSuffix:@"XLS"] || [fileAbsolutePath hasSuffix:@"txt"] || [fileAbsolutePath hasSuffix:@"TXT"] || [fileAbsolutePath hasSuffix:@"wav"] || [fileAbsolutePath hasSuffix:@"WAV"] || [fileAbsolutePath hasSuffix:@"amr"] || [fileAbsolutePath hasSuffix:@"AMR"]) {
+            // 计算某个文件的大小
+            filesAllSize += [self fileSizeWithPath:fileAbsolutePath];
+        }
+    }
+    
+    return filesAllSize;
+}
+
+
+
+/**
+ 计算指定文件的大小
+ 
+ @param filePath 文件地址
+ @return 大小
+ */
++ (long long)fileSizeWithPath:(NSString *)filePath {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if ([fileManager fileExistsAtPath:filePath]) {
+        return [[fileManager attributesOfItemAtPath:filePath error:nil] fileSize];
+    }
+    
+    return 0;
+}
+
+
+
+/**
+ 删除指定目录下的所有文件
+ 
+ @param folderPath 目录地址
+ */
++ (void)removeFolderPathAndFileWithPath:(NSString *)folderPath {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    // 目录是否存在
+    if (![fileManager fileExistsAtPath:folderPath]) return;
+    
+    // 文件枚举器
+    NSEnumerator *fileEnumerator = [[fileManager subpathsAtPath:folderPath] objectEnumerator];
+    NSString *fileName = nil;
+    while ((fileName = [fileEnumerator nextObject]) != nil) {
+        NSString *fileAbsolutePath = [folderPath stringByAppendingPathComponent:fileName];
+        if ([fileAbsolutePath hasSuffix:@"doc"] || [fileAbsolutePath hasSuffix:@"DOC"]  || [fileAbsolutePath hasSuffix:@"docx"] || [fileAbsolutePath hasSuffix:@"DOCX"] || [fileAbsolutePath hasSuffix:@"pdf"] || [fileAbsolutePath hasSuffix:@"PDF"] || [fileAbsolutePath hasSuffix:@"ppt"] || [fileAbsolutePath hasSuffix:@"PPT"] || [fileAbsolutePath hasSuffix:@"xls"] || [fileAbsolutePath hasSuffix:@"XLS"] || [fileAbsolutePath hasSuffix:@"txt"] || [fileAbsolutePath hasSuffix:@"TXT"] || [fileAbsolutePath hasSuffix:@"wav"] || [fileAbsolutePath hasSuffix:@"WAV"] || [fileAbsolutePath hasSuffix:@"amr"] || [fileAbsolutePath hasSuffix:@"AMR"]) {
+            // 删除指定的文件
+            NSError *error = nil;
+            [fileManager removeItemAtPath:fileAbsolutePath error:&error];
+            if (error != nil) {
+                MYLOG(@"error: %@", error);
+            }
+        }
+    }
+}
+
+
+
+/**
+ url参数字符串转字典
+ 
+ @param urlStr url参数字符串
+ @return 结果字典
+ */
++(NSDictionary *)dictionaryWithUrlString:(NSString *)urlStr
+{
+    urlStr = [urlStr stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    if (urlStr.length > 0) {
+        NSArray *array = [urlStr componentsSeparatedByString:@"&"];
+        NSMutableDictionary *paramsDict = [NSMutableDictionary dictionary];
+        for (NSString *param in array) {
+            if (param.length > 0) {
+                NSArray *parArr = [param componentsSeparatedByString:@"="];
+                if (parArr.count == 2) {
+                    [paramsDict setValue:parArr[1] forKey:parArr[0]];
+                }
+            }
+        }
+        return paramsDict;
+    }else{
+        return nil;
+    }
+}
+
+
+
+/**
+ json 字符串转字典的方法
+ 
+ @param jsonString json字符串
+ @return 转换后的字典
+ */
++ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
+    if (jsonString == nil) {
+        return nil;
+    }
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:NSJSONReadingMutableContainers
+                                                          error:&err];
+    if(err) {
+        NSLog(@"json解析失败：%@",err);
+        return nil;
+    }
+    return dic;
+}
+
+
+
+
+/*
+ *x*y
+ *改变字符start 和 end 之间的字符的颜色 和 字体大小
+ */
++ (void)messageAction:(UITextView *)theTextView startString:(NSString *)start endString:(NSString *)end andAllColor:(UIColor *)allColor andMarkColor:(UIColor *)markColor andMarkFondSize:(float)fontSize {
+    NSString *tempStr = theTextView.text;
+    NSMutableAttributedString *strAtt = [[NSMutableAttributedString alloc] initWithString:tempStr];
+    [strAtt addAttribute:NSForegroundColorAttributeName value:allColor range:NSMakeRange(0, [strAtt length])];
+    // 'x''y'字符的范围
+    NSRange tempRange = NSMakeRange(0, 0);
+    if ([self judgeStringIsNull:start]) {
+        tempRange = [tempStr rangeOfString:start];
+    }
+    NSRange tempRangeOne = NSMakeRange([strAtt length], 0);
+    if ([self judgeStringIsNull:end]) {
+        tempRangeOne =  [tempStr rangeOfString:end];
+    }
+    // 更改字符颜色
+    NSRange markRange = NSMakeRange(tempRange.location+tempRange.length, tempRangeOne.location-(tempRange.location+tempRange.length));
+    [strAtt addAttribute:NSForegroundColorAttributeName value:markColor range:markRange];
+    // 更改字体
+    // [strAtt addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:20] range:NSMakeRange(0, [strAtt length])];
+    [strAtt addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue" size:fontSize] range:markRange];
+    theTextView.attributedText = strAtt;
+}
+
+
+/**
+ *判断字符串是否不全为空
+ */
++ (BOOL)judgeStringIsNull:(NSString *)string {
+    if ([[string class] isSubclassOfClass:[NSNumber class]]) {
+        return YES;
+    }
+    BOOL result = NO;
+    if (string != nil && string.length > 0) {
+        for (int i = 0; i < string.length; i ++) {
+            NSString *subStr = [string substringWithRange:NSMakeRange(i, 1)];
+            if (![subStr isEqualToString:@" "] && ![subStr isEqualToString:@""]) {
+                result = YES;
+            }
+        }
+    }
+    return result;
+}
+
+
+
+/**
+ 判断字符串是否为纯数字
+ 
+ @param checkedNumString 字符串
+ @return 结果Bool类型
+ */
++ (BOOL)isNum:(NSString *)checkedNumString {
+    checkedNumString = [checkedNumString stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
+    if(checkedNumString.length > 0) {
+        return NO;
+    }
+    return YES;
+}
+
+
+/**
+ *  从图片中按指定的位置大小截取图片的一部分
+ *
+ *  @param image UIImage image 原始的图片
+ *  @param rect  CGRect rect 要截取的区域
+ *
+ *  @return UIImage
+ */
++ (UIImage *)ct_imageFromImage:(UIImage *)image inRect:(CGRect)rect {
+    
+    //把像 素rect 转化为 点rect（如无转化则按原图像素取部分图片）
+    CGFloat scale = [UIScreen mainScreen].scale;
+    CGFloat x= rect.origin.x*scale,y=rect.origin.y*scale,w=rect.size.width*scale,h=rect.size.height*scale;
+    CGRect dianRect = CGRectMake(x, y, w, h);
+    
+    //截取部分图片并生成新图片
+    CGImageRef sourceImageRef = [image CGImage];
+    CGImageRef newImageRef = CGImageCreateWithImageInRect(sourceImageRef, dianRect);
+    UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp];
+    return newImage;
+}
+
+
+
+
 
 @end

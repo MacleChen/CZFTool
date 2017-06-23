@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		393A62071EFA0091001EDABC /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 393A61FD1EFA0091001EDABC /* AESCrypt.m */; };
-		393A62081EFA0091001EDABC /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 393A62001EFA0091001EDABC /* NSData+Base64.m */; };
-		393A62091EFA0091001EDABC /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 393A62021EFA0091001EDABC /* NSData+CommonCrypto.m */; };
-		393A620A1EFA0091001EDABC /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 393A62041EFA0091001EDABC /* NSString+Base64.m */; };
-		393A620B1EFA0091001EDABC /* tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 393A62061EFA0091001EDABC /* tools.m */; };
 		3984203C1ED4013F0021E0FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984203B1ED4013F0021E0FD /* main.m */; };
 		3984203F1ED4013F0021E0FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984203E1ED4013F0021E0FD /* AppDelegate.m */; };
 		398420421ED4013F0021E0FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398420411ED4013F0021E0FD /* ViewController.m */; };
@@ -24,6 +19,11 @@
 		3984207A1ED40AB70021E0FD /* BeautifulImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398420791ED40AB70021E0FD /* BeautifulImageViewController.m */; };
 		398420801ED410000021E0FD /* TimeStampDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3984207F1ED410000021E0FD /* TimeStampDateViewController.m */; };
 		39B7C6231ED5606000B47F1A /* AESCEnDeCryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B7C6221ED5606000B47F1A /* AESCEnDeCryptViewController.m */; };
+		39EAC70D1EFBBDB2002BDBE5 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EAC7031EFBBDB2002BDBE5 /* AESCrypt.m */; };
+		39EAC70E1EFBBDB2002BDBE5 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EAC7061EFBBDB2002BDBE5 /* NSData+Base64.m */; };
+		39EAC70F1EFBBDB2002BDBE5 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EAC7081EFBBDB2002BDBE5 /* NSData+CommonCrypto.m */; };
+		39EAC7101EFBBDB2002BDBE5 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EAC70A1EFBBDB2002BDBE5 /* NSString+Base64.m */; };
+		39EAC7111EFBBDB2002BDBE5 /* tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EAC70C1EFBBDB2002BDBE5 /* tools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,17 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		393A61FC1EFA0091001EDABC /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
-		393A61FD1EFA0091001EDABC /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
-		393A61FE1EFA0091001EDABC /* CZFTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFTool.h; sourceTree = "<group>"; };
-		393A61FF1EFA0091001EDABC /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		393A62001EFA0091001EDABC /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		393A62011EFA0091001EDABC /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
-		393A62021EFA0091001EDABC /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
-		393A62031EFA0091001EDABC /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
-		393A62041EFA0091001EDABC /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
-		393A62051EFA0091001EDABC /* tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
-		393A62061EFA0091001EDABC /* tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tools.m; sourceTree = "<group>"; };
 		398420371ED4013F0021E0FD /* CZFToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZFToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3984203B1ED4013F0021E0FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3984203D1ED4013F0021E0FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +69,17 @@
 		398420811ED412CE0021E0FD /* CZFToolDemo-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CZFToolDemo-PrefixHeader.pch"; sourceTree = "<group>"; };
 		39B7C6211ED5606000B47F1A /* AESCEnDeCryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCEnDeCryptViewController.h; sourceTree = "<group>"; };
 		39B7C6221ED5606000B47F1A /* AESCEnDeCryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCEnDeCryptViewController.m; sourceTree = "<group>"; };
+		39EAC7021EFBBDB2002BDBE5 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		39EAC7031EFBBDB2002BDBE5 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		39EAC7041EFBBDB2002BDBE5 /* CZFTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFTool.h; sourceTree = "<group>"; };
+		39EAC7051EFBBDB2002BDBE5 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		39EAC7061EFBBDB2002BDBE5 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		39EAC7071EFBBDB2002BDBE5 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		39EAC7081EFBBDB2002BDBE5 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		39EAC7091EFBBDB2002BDBE5 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		39EAC70A1EFBBDB2002BDBE5 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		39EAC70B1EFBBDB2002BDBE5 /* tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
+		39EAC70C1EFBBDB2002BDBE5 /* tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,24 +107,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		393A61FB1EFA0091001EDABC /* CZFTool */ = {
-			isa = PBXGroup;
-			children = (
-				393A61FC1EFA0091001EDABC /* AESCrypt.h */,
-				393A61FD1EFA0091001EDABC /* AESCrypt.m */,
-				393A61FE1EFA0091001EDABC /* CZFTool.h */,
-				393A61FF1EFA0091001EDABC /* NSData+Base64.h */,
-				393A62001EFA0091001EDABC /* NSData+Base64.m */,
-				393A62011EFA0091001EDABC /* NSData+CommonCrypto.h */,
-				393A62021EFA0091001EDABC /* NSData+CommonCrypto.m */,
-				393A62031EFA0091001EDABC /* NSString+Base64.h */,
-				393A62041EFA0091001EDABC /* NSString+Base64.m */,
-				393A62051EFA0091001EDABC /* tools.h */,
-				393A62061EFA0091001EDABC /* tools.m */,
-			);
-			path = CZFTool;
-			sourceTree = "<group>";
-		};
 		3984202E1ED4013F0021E0FD = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +130,7 @@
 		398420391ED4013F0021E0FD /* CZFToolDemo */ = {
 			isa = PBXGroup;
 			children = (
-				393A61FB1EFA0091001EDABC /* CZFTool */,
+				39EAC7011EFBBDB2002BDBE5 /* CZFTool */,
 				3984203D1ED4013F0021E0FD /* AppDelegate.h */,
 				3984203E1ED4013F0021E0FD /* AppDelegate.m */,
 				398420401ED4013F0021E0FD /* ViewController.h */,
@@ -259,6 +241,24 @@
 				39B7C6221ED5606000B47F1A /* AESCEnDeCryptViewController.m */,
 			);
 			name = AESCEnDeCryptViewController;
+			sourceTree = "<group>";
+		};
+		39EAC7011EFBBDB2002BDBE5 /* CZFTool */ = {
+			isa = PBXGroup;
+			children = (
+				39EAC7021EFBBDB2002BDBE5 /* AESCrypt.h */,
+				39EAC7031EFBBDB2002BDBE5 /* AESCrypt.m */,
+				39EAC7041EFBBDB2002BDBE5 /* CZFTool.h */,
+				39EAC7051EFBBDB2002BDBE5 /* NSData+Base64.h */,
+				39EAC7061EFBBDB2002BDBE5 /* NSData+Base64.m */,
+				39EAC7071EFBBDB2002BDBE5 /* NSData+CommonCrypto.h */,
+				39EAC7081EFBBDB2002BDBE5 /* NSData+CommonCrypto.m */,
+				39EAC7091EFBBDB2002BDBE5 /* NSString+Base64.h */,
+				39EAC70A1EFBBDB2002BDBE5 /* NSString+Base64.m */,
+				39EAC70B1EFBBDB2002BDBE5 /* tools.h */,
+				39EAC70C1EFBBDB2002BDBE5 /* tools.m */,
+			);
+			path = CZFTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,18 +397,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				393A62071EFA0091001EDABC /* AESCrypt.m in Sources */,
+				39EAC70D1EFBBDB2002BDBE5 /* AESCrypt.m in Sources */,
 				398420421ED4013F0021E0FD /* ViewController.m in Sources */,
-				393A62091EFA0091001EDABC /* NSData+CommonCrypto.m in Sources */,
-				393A620B1EFA0091001EDABC /* tools.m in Sources */,
+				39EAC70F1EFBBDB2002BDBE5 /* NSData+CommonCrypto.m in Sources */,
+				39EAC7111EFBBDB2002BDBE5 /* tools.m in Sources */,
 				398420761ED407BD0021E0FD /* AddImageWaterViewController.m in Sources */,
 				39B7C6231ED5606000B47F1A /* AESCEnDeCryptViewController.m in Sources */,
 				398420801ED410000021E0FD /* TimeStampDateViewController.m in Sources */,
-				393A620A1EFA0091001EDABC /* NSString+Base64.m in Sources */,
+				39EAC7101EFBBDB2002BDBE5 /* NSString+Base64.m in Sources */,
 				3984203F1ED4013F0021E0FD /* AppDelegate.m in Sources */,
 				3984207A1ED40AB70021E0FD /* BeautifulImageViewController.m in Sources */,
 				3984203C1ED4013F0021E0FD /* main.m in Sources */,
-				393A62081EFA0091001EDABC /* NSData+Base64.m in Sources */,
+				39EAC70E1EFBBDB2002BDBE5 /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

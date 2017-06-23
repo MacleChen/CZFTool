@@ -16,15 +16,15 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CZFTool"
-  s.version      = "0.0.4"
-  s.summary      = "修复CZFtool框架内容"
+  s.version      = "0.0.5"
+  s.summary      = "增加工具栏中对图片的处理；兼容swift3.0以上项目"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "修复CZFTool框架内容，增加加密框架和图片处理功能"
+  s.description  = "增加工具栏中对图片的处理；兼容swift3.0以上项目,增加更多的工具方法"
 
   s.homepage     = "https://github.com/MacleChen/CZFTool"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
