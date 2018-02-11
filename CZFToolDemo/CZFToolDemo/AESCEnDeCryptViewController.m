@@ -42,7 +42,7 @@
 // MARK: 加密
 - (IBAction)aescEncryptBtnClick:(UIButton *)sender {
     if (self.textOneView.text.length > 0) {
-        self.textTwoView.text = [AESCrypt encrypt:self.textOneView.text password:@"abc"];
+        self.textTwoView.text = [AESCryptJointSky encrypt:self.textOneView.text password:@"abc"];
     }
     [self.textOneView resignFirstResponder];
 }
@@ -50,7 +50,7 @@
 // MARK: 解密
 - (IBAction)aescDecryptBtnClick:(UIButton *)sender {
     if (self.textTwoView.text.length > 0) {
-        self.textThreeView.text = [AESCrypt decrypt:self.textTwoView.text password:@"abc"];
+        self.textThreeView.text = [AESCryptJointSky decrypt:self.textTwoView.text password:@"abc"];
     }
 }
 

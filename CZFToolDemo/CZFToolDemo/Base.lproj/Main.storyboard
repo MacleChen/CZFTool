@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="W3r-it-4Q1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="W3r-it-4Q1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <navigationController id="W3r-it-4Q1" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="yU8-9B-hK8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -110,22 +110,16 @@
                                     <constraint firstAttribute="height" constant="313" id="wdU-DF-MH4"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="处理前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtr-io-6SK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="处理前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtr-io-6SK">
                                 <rect key="frame" x="70" y="483" width="52" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Be6-40-VHg"/>
-                                    <constraint firstAttribute="width" constant="52" id="LGX-dQ-Rvk"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="处理后" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYg-oO-3fr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="处理后" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYg-oO-3fr">
                                 <rect key="frame" x="252" y="483" width="52" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="BTd-HS-ZaB"/>
-                                    <constraint firstAttribute="width" constant="52" id="sh9-pv-yOC"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -134,12 +128,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="a5A-at-BnA" firstAttribute="leading" secondItem="ZoO-0H-bCa" secondAttribute="leading" id="8dH-He-IW0"/>
-                            <constraint firstItem="Dtr-io-6SK" firstAttribute="top" secondItem="a5A-at-BnA" secondAttribute="bottom" constant="8" id="TpH-Du-Gub"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dYg-oO-3fr" secondAttribute="trailing" constant="55" id="VDg-OV-JXR"/>
-                            <constraint firstItem="dYg-oO-3fr" firstAttribute="top" secondItem="r1N-8r-g8E" secondAttribute="bottom" constant="8" id="WIF-Gb-CxO"/>
-                            <constraint firstItem="dYg-oO-3fr" firstAttribute="top" secondItem="r1N-8r-g8E" secondAttribute="bottom" constant="8" id="bun-9x-vP6"/>
-                            <constraint firstItem="Dtr-io-6SK" firstAttribute="leading" secondItem="ZoO-0H-bCa" secondAttribute="leadingMargin" constant="54" id="c5s-Y6-wdN"/>
-                            <constraint firstItem="Dtr-io-6SK" firstAttribute="top" secondItem="a5A-at-BnA" secondAttribute="bottom" constant="8" id="gXe-G5-GBZ"/>
                             <constraint firstItem="r1N-8r-g8E" firstAttribute="leading" secondItem="a5A-at-BnA" secondAttribute="trailing" id="ghV-BQ-gSI"/>
                             <constraint firstItem="r1N-8r-g8E" firstAttribute="top" secondItem="QDX-z7-zpY" secondAttribute="bottom" constant="142" id="hp0-TD-ihc"/>
                             <constraint firstItem="r1N-8r-g8E" firstAttribute="width" secondItem="a5A-at-BnA" secondAttribute="width" id="rwZ-ZN-KZJ"/>

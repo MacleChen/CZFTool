@@ -177,7 +177,7 @@ NSString * const kCommonCryptoErrorDomain = @"CommonCryptoErrorDomain";
 	NSData * result = [self dataEncryptedUsingAlgorithm: kCCAlgorithmAES128
                                                   key: key
                                               options: kCCOptionPKCS7Padding
-                                                error: &status];
+                                                error: (unsigned int *)&status];
 	
 	if ( result != nil )
 		return ( result );
@@ -194,7 +194,7 @@ NSString * const kCommonCryptoErrorDomain = @"CommonCryptoErrorDomain";
 	NSData * result = [self decryptedDataUsingAlgorithm: kCCAlgorithmAES128
                                                   key: key
                                               options: kCCOptionPKCS7Padding
-                                                error: &status];
+                                                error: (unsigned int *)&status];
 	
 	if ( result != nil )
 		return ( result );
@@ -211,7 +211,7 @@ NSString * const kCommonCryptoErrorDomain = @"CommonCryptoErrorDomain";
 	NSData * result = [self dataEncryptedUsingAlgorithm: kCCAlgorithmDES
                                                   key: key
                                               options: kCCOptionPKCS7Padding
-                                                error: &status];
+                                                error: (unsigned int *)&status];
 	
 	if ( result != nil )
 		return ( result );
@@ -228,7 +228,7 @@ NSString * const kCommonCryptoErrorDomain = @"CommonCryptoErrorDomain";
 	NSData * result = [self decryptedDataUsingAlgorithm: kCCAlgorithmDES
                                                   key: key
                                               options: kCCOptionPKCS7Padding
-                                                error: &status];
+                                                error: (unsigned int *)&status];
 	
 	if ( result != nil )
 		return ( result );
@@ -245,7 +245,7 @@ NSString * const kCommonCryptoErrorDomain = @"CommonCryptoErrorDomain";
 	NSData * result = [self dataEncryptedUsingAlgorithm: kCCAlgorithmCAST
                                                   key: key
                                               options: kCCOptionPKCS7Padding
-                                                error: &status];
+                                                error: (unsigned int *)&status];
 	
 	if ( result != nil )
 		return ( result );
@@ -262,7 +262,7 @@ NSString * const kCommonCryptoErrorDomain = @"CommonCryptoErrorDomain";
 	NSData * result = [self decryptedDataUsingAlgorithm: kCCAlgorithmCAST
                                                   key: key
                                               options: kCCOptionPKCS7Padding
-                                                error: &status];
+                                                error: (unsigned int *)&status];
 	
 	if ( result != nil )
 		return ( result );
@@ -372,7 +372,7 @@ static void FixKeyLengths( CCAlgorithm algorithm, NSMutableData * keyData, NSMut
 
 - (NSData *) dataEncryptedUsingAlgorithm: (CCAlgorithm) algorithm
                                      key: (id) key
-                                   error: (CCCryptorStatus *) error
+                                   error: (uint32_t *) error
 {
 	return ( [self dataEncryptedUsingAlgorithm: algorithm
                                          key: key
@@ -384,7 +384,7 @@ static void FixKeyLengths( CCAlgorithm algorithm, NSMutableData * keyData, NSMut
 - (NSData *) dataEncryptedUsingAlgorithm: (CCAlgorithm) algorithm
                                      key: (id) key
                                  options: (CCOptions) options
-                                   error: (CCCryptorStatus *) error
+                                   error: (uint32_t *) error
 {
   return ( [self dataEncryptedUsingAlgorithm: algorithm
                                          key: key
@@ -397,7 +397,7 @@ static void FixKeyLengths( CCAlgorithm algorithm, NSMutableData * keyData, NSMut
                                      key: (id) key
                     initializationVector: (id) iv
                                  options: (CCOptions) options
-                                   error: (CCCryptorStatus *) error
+                                   error: (uint32_t *) error
 {
 	CCCryptorRef cryptor = NULL;
 	CCCryptorStatus status = kCCSuccess;
@@ -445,7 +445,7 @@ static void FixKeyLengths( CCAlgorithm algorithm, NSMutableData * keyData, NSMut
 
 - (NSData *) decryptedDataUsingAlgorithm: (CCAlgorithm) algorithm
                                      key: (id) key		// data or string
-                                   error: (CCCryptorStatus *) error
+                                   error: (uint32_t *) error
 {
 	return ( [self decryptedDataUsingAlgorithm: algorithm
                                          key: key
@@ -457,7 +457,7 @@ static void FixKeyLengths( CCAlgorithm algorithm, NSMutableData * keyData, NSMut
 - (NSData *) decryptedDataUsingAlgorithm: (CCAlgorithm) algorithm
                                      key: (id) key		// data or string
                                  options: (CCOptions) options
-                                   error: (CCCryptorStatus *) error
+                                   error: (uint32_t *) error
 {
   return ( [self decryptedDataUsingAlgorithm: algorithm
                                          key: key
@@ -470,7 +470,7 @@ static void FixKeyLengths( CCAlgorithm algorithm, NSMutableData * keyData, NSMut
                                      key: (id) key		// data or string
                     initializationVector: (id) iv		// data or string
                                  options: (CCOptions) options
-                                   error: (CCCryptorStatus *) error
+                                   error: (uint32_t *) error
 {
 	CCCryptorRef cryptor = NULL;
 	CCCryptorStatus status = kCCSuccess;

@@ -29,9 +29,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AESCrypt : NSObject
+@interface AESCryptJointSky : NSObject
 
-+ (NSString *)encrypt:(NSString *)message password:(NSString *)password;
-+ (NSString *)decrypt:(NSString *)base64EncodedString password:(NSString *)password;
++ (NSString *)encrypt:(NSString *)message password:(NSString *)password; // 加密
++ (NSString *)decrypt:(NSString *)base64EncodedString password:(NSString *)password; // 解密
 
 @end
